@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "An example of avro usage",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +13,10 @@
     "container"
   ],
   "author": "Frank Baele",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "avsc": "^5.4.21",
+    "buffer-crc32": "^0.2.13",
+    "snappy": "^6.3.4"
+  }
 }
