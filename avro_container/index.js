@@ -74,13 +74,13 @@ encoder.end();
 import fs from 'fs';
 
 const src = fs.createReadStream('./users.avro');
-// src.pipe(new avsc.streams.BlockDecoder())
-//     .on('data', function (item) {
-//         console.log(item);
-//     })
-//     .on('end', () => {
-//         console.log('All records read')
-//     });
+src.pipe(new avsc.streams.BlockDecoder())
+    .on('data', function (item) {
+        console.log(item);
+    })
+    .on('end', () => {
+        console.log('All records read')
+    });
 
 // Snappy example
 
