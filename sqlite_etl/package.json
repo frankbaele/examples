@@ -1,0 +1,18 @@
+{
+  "name": "sqlite_etl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "better-sqlite3": "^7.0.1",
+    "csv-parse": "^4.10.1",
+    "uuid": "^8.1.0"
+  }
+}
